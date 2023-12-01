@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BancoHoras.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BancoHoras.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BancoHoras.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BancoHoras.props",
+      "PackagePath": "build\\BancoHoras.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BancoHoras.props",
+      "PackagePath": "buildMultiTargeting\\BancoHoras.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BancoHoras.props",
+      "PackagePath": "buildTransitive\\BancoHoras.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

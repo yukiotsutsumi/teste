@@ -1,0 +1,58 @@
+﻿@page "/categories/cadastro"
+@rendermode InteractiveServer
+@inject AppDbContext Context
+@inject NavigationManager Navigation
+
+<h3>Cadastro de horas</h3>
+
+<EditForm Model="@Model" OnValidSubmit="onSubmitAsync">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+
+        <label class="form-label">Nome do funcionário</label>
+        <InputSelect size="3" class="form-control" @bind-Value="Model.Nome" required>
+            <option value="Yukio Tsutsumi">Yukio Tsutsumi</option>
+            <option value="Funcionário 2">Funcionário 2</option>
+            <option value="Funcionário 3">Funcionário 3</option>
+        </InputSelect>
+    </div>
+
+        <label for="InicioManha">Horário de Início (Manhã):</label>
+        <InputText type="time" id="InicioManha" @bind-Value="Model.InicioManha" class="form-control" required />
+
+        <label for="FimManha">Horário de Término (Manhã):</label>
+        <InputText type="time" id="FimManha" @bind-Value="Model.FimManha" class="form-control" required />
+  
+        <label for="InicioTarde">Horário de Início (Tarde):</label>
+        <InputText type="time" id="InicioTarde" @bind-Value="Model.InicioTarde" class="form-control" required />
+
+        <label for="FimTarde">Horário de Término (Tarde):</label>
+        <InputText type="time" id="FimTarde" @bind-Value="Model.FimTarde" class="form-control" required />
+
+        <label for="Observacoes">Observações:</label>
+        <InputTextArea id="Observacoes" @bind-Value="Model.Observacoes" class="form-control" required />
+
+        <button class="btn btn-success">Salvar</button>
+
+</EditForm>
+
+
+@code {
+    public Category Model { get; set; } = new();
+
+    public async Task onSubmitAsync()
+    {
+        try
+        {
+            await Context.Categories.AddAsync(Model);
+            await Context.SaveChangesAsync();
+
+            Navigation.NavigateTo("/categories/list");
+        }
+        catch (Exception ex)
+        {
+            Navigation.NavigateTo("Error");
+            throw;
+        }
+    }
+}

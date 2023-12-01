@@ -1,0 +1,59 @@
+/* Estilos gerais para o corpo da página */
+body[b-d5pq3nfi2p] {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* Container do formulário */
+.container[b-d5pq3nfi2p] {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para rótulos */
+label[b-d5pq3nfi2p] {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+/* Estilos para campos de entrada de texto */
+input[type="text"][b-d5pq3nfi2p], textarea[b-d5pq3nfi2p] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Estilos para botões */
+button[b-d5pq3nfi2p] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    
+button:hover[b-d5pq3nfi2p] {
+        background-color: #45a049;
+}
+/* Estilos para mensagens de erro */
+.validation-error[b-d5pq3nfi2p] {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+
+/* Estilos para o corpo da página em telas pequenas (responsivo) */
+@media screen and (max-width: 600px) {
+    .container[b-d5pq3nfi2p] {
+        margin: 20px;
+    }
+}

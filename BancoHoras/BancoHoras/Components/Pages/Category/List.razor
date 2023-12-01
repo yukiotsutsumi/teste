@@ -1,0 +1,46 @@
+﻿@page "/categories/list"
+@inject AppDbContext Context;
+@attribute [StreamRendering]
+<h3>Lista</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Início Manhã</th>
+            <th>Término Manhã</th>
+            <th>Início Tarde</th>
+            <th>Término Tarde</th>
+            <th>Observações</th>
+            <th>Tempo Total</th>
+         </tr>
+    </thead>
+    <tbody>
+        @foreach (var registro in Categories)
+        {
+            <tr>
+                <td>@registro.Id</td>
+                <td>@registro.Nome</td>
+                <td>@registro.InicioManha</td>
+                <td>@registro.FimManha</td>
+                <td>@registro.InicioTarde</td>
+                <td>@registro.FimTarde</td>
+                <td>@registro.Observacoes</td>
+                <td>@registro.TempoTotal</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    public IEnumerable<Category> Categories { get; set; } = Enumerable.Empty<Category>();
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(5000);
+        Categories = await Context
+            .Categories
+            .AsNoTracking()
+            .ToListAsync();
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "viMQDJi6RjGrxZAkKTk92YkmoOar6rrDY0eww3P+eJU=",
+  "Hash": "YxZGYRPUyJ5V1pYG2vRB1kUv9IWIqWs5fiQ0TQTodVQ=",
   "Source": "BancoHoras",
   "BasePath": "_content/BancoHoras",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BancoHoras\\wwwroot",
       "Source": "BancoHoras",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\",
       "BasePath": "_content/BancoHoras",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BancoHoras.styles.css",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BancoHoras.styles.css",
       "SourceId": "BancoHoras",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "BancoHoras.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BancoHoras.styles.css"
+      "OriginalItemSpec": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BancoHoras.styles.css"
     },
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BancoHoras.bundle.scp.css",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BancoHoras.bundle.scp.css",
       "SourceId": "BancoHoras",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "BancoHoras.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BancoHoras.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BancoHoras.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\app.css",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\app.css",
       "SourceId": "BancoHoras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "BancoHoras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BancoHoras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\favicon.png",
+      "Identity": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\favicon.png",
       "SourceId": "BancoHoras",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Lixo\\BancoHoras\\BancoHoras\\BancoHoras\\wwwroot\\",
+      "ContentRoot": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\wwwroot\\",
       "BasePath": "_content/BancoHoras",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

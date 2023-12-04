@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xKnrxYdd6stHt8PW0M3efctINiADdlX2M/+yJAdz9PuFhyf5PMrQUl3IgNLnJ/kruXmPlxegTxrx64BoBYglDw==",
+  "dgSpecHash": "8d85Q8nULSwqo+b2G3DbEu799MGk8WhSaMnvy4ohoNrMRPTF6g1hVSFhCCPrFH71MmVvjgy8plJuW+1ovXx7kA==",
   "success": true,
-  "projectFilePath": "C:\\Desenvolvimento\\BancoHoras\\BancoHoras\\BancoHoras\\BancoHoras.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\BancoHoras\\teste\\BancoHoras\\BancoHoras\\BancoHoras.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yukio Tsutsumi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Yukio Tsutsumi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

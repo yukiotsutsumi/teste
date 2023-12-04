@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BancoHoras
 build_property.RootNamespace = BancoHoras
-build_property.ProjectDir = C:\Desenvolvimento\BancoHoras\BancoHoras\BancoHoras\
+build_property.ProjectDir = C:\Desenvolvimento\BancoHoras\teste\BancoHoras\BancoHoras\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Desenvolvimento\BancoHoras\BancoHoras\BancoHoras
+build_property.MSBuildProjectDirectory = C:\Desenvolvimento\BancoHoras\teste\BancoHoras\BancoHoras
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/App.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Pages/Category/List.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Pages/Category/List.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVxMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Pages/Error.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Pages/Home.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Routes.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/_Imports.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Layout/MainLayout.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-hi7ce6v4lq
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Layout/NavMenu.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-if67hv6a1c
 
-[C:/Desenvolvimento/BancoHoras/BancoHoras/BancoHoras/Components/Pages/Category/Cadastro.razor]
+[C:/Desenvolvimento/BancoHoras/teste/BancoHoras/BancoHoras/Components/Pages/Category/Cadastro.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVxDYWRhc3Ryby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-d5pq3nfi2p

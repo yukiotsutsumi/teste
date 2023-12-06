@@ -25,6 +25,7 @@ namespace DemoAPI.Models.Classes
                 string horarioTotal = CalcularHorasTrabalhadas(HoraInicioManha, HoraFimManha, HoraInicioTarde, HoraFimTarde);
                 return horarioTotal;
             }
+
         }
         public static string CalcularHorasTrabalhadas(string inicioManha, string fimManha, string inicioTarde, string fimTarde)
         {

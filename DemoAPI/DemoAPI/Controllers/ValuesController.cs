@@ -2,7 +2,7 @@
 using DemoAPI.Models.Data;
 using Microsoft.AspNetCore.Mvc;
 
-[Route("api/listarhoras")]
+[Route("api")]
 [ApiController]
 public class ValuesController : ControllerBase
 {
@@ -11,25 +11,25 @@ public class ValuesController : ControllerBase
     {
          _dbData = dbData;
     }
-    [HttpGet]
+    [HttpGet("/listarHoras")]
     public ActionResult<List<ApontamentoDeHoras>> GetFuncionario()
     {
         return Ok(_dbData.ListarApontamentoHoras());
     }
-    [HttpPost]
+    [HttpPost("/cadastrarHoras")]
     public ActionResult<List<ApontamentoDeHoras>> PostFuncionario([FromBody] ApontamentoDeHoras novoApontamento)
     {
         var apontamentos = _dbData.CadastrarApontamentoHoras(novoApontamento);
         return Ok(apontamentos);
     }
-    [HttpPut]
+    [HttpPut("/atualizarFuncionario")]
     public ActionResult<ApontamentoDeHoras> UpdateFuncionario(ApontamentoDeHoras editadoFuncionario)
     {
         var editFuncionario = _dbData.UpdateFuncionario(editadoFuncionario);
         return Ok(editFuncionario);
     }
 
-    [HttpDelete]
+    [HttpDelete("/deletarFuncionario")]
     public ActionResult<List<ApontamentoDeHoras>> DeleteFuncionario(int id)
     {
         var idFuncionario = _dbData.DeleteFuncionario(id);

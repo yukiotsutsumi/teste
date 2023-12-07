@@ -17,7 +17,7 @@ public class ValuesController : ControllerBase
         return Ok(_dbData.ListarApontamentoHoras());
     }
     [HttpPost("/cadastrarApontamento")]
-    public ActionResult<List<ApontamentoDeHoras>> PostApontamento([FromBody] ApontamentoDeHoras novoApontamento)
+    public ActionResult <ApontamentoDeHoras> PostApontamento([FromBody] ApontamentoDeHoras novoApontamento)
     {
             var apontamentos = _dbData.CadastrarApontamentoHoras(novoApontamento);
             return Ok(apontamentos);
@@ -30,9 +30,9 @@ public class ValuesController : ControllerBase
     }
 
     [HttpDelete("/deletarApontamento")]
-    public ActionResult<List<ApontamentoDeHoras>> DeleteApontamento(int id)
+    public ActionResult<ApontamentoDeHoras> DeleteApontamento(int id)
     {
-        var idFuncionario = _dbData.UpdateApontamento(id);
+        var idFuncionario = _dbData.RemoveApontamento(id);
         return Ok(idFuncionario);
     }
 }

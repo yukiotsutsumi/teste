@@ -19,8 +19,8 @@ public class ValuesController : ControllerBase
     [HttpPost("/cadastrarApontamento")]
     public ActionResult <ApontamentoDeHoras> PostApontamento([FromBody] ApontamentoDeHoras novoApontamento)
     {
-            var apontamentos = _dbData.CadastrarApontamentoHoras(novoApontamento);
-            return Ok(apontamentos);
+        var apontamentos = _dbData.CadastrarApontamentoHoras(novoApontamento);
+        return Ok(apontamentos);
     }
     [HttpPut("/atualizarApontamento")]
     public ActionResult<ApontamentoDeHoras> UpdateApontamento(ApontamentoDeHoras editadoFuncionario)

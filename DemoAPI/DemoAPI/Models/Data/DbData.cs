@@ -12,97 +12,112 @@ namespace DemoAPI.Models.Data
             _dbApontamentoHoras = dbApontamentoHoras;
         }
 
-        public TratamentoErros<ApontamentoDeHoras> CadastrarApontamentoHoras(ApontamentoDeHoras novoApontamento)
+        public Tratamento<ApontamentoDeHoras> CadastrarApontamentoHoras(ApontamentoDeHoras novoApontamento)
         {
-            TratamentoErros<ApontamentoDeHoras> tratamentoErros = new TratamentoErros<ApontamentoDeHoras>();
-
+            Tratamento<ApontamentoDeHoras> tratamento = new Tratamento<ApontamentoDeHoras>();
             try
             {
+                tratamento.Dados = novoApontamento;
                 if (novoApontamento == null)
                 {
-                    tratamentoErros.Dados = null;
-                    tratamentoErros.Mensagem = "Informar dados";
-                    tratamentoErros.Sucesso = false;
+                    tratamento.Dados = null;
+                    tratamento.Mensagem = "Informar dados";
+                    tratamento.Sucesso = false;
 
-                    return tratamentoErros;
+                    return tratamento;
                 }
+                if (tratamento.Dados.TempoTotal == "00:00")
+                {
+                    tratamento.Dados = null;
+                    tratamento.Mensagem = "Formato de horário inválido";
+                    tratamento.Sucesso = false;
+                }
+                else
+                {
+                    _dbApontamentoHoras.ApontamentoDeHoras.Add(novoApontamento);
+                    _dbApontamentoHoras.SaveChanges();
 
-                _dbApontamentoHoras.ApontamentoDeHoras.Add(novoApontamento);
-                _dbApontamentoHoras.SaveChanges();
-
-                tratamentoErros.Mensagem = "Apontamento cadastrado com sucesso";
-                tratamentoErros.Dados = novoApontamento;
+                    tratamento.Mensagem = "Apontamento cadastrado com sucesso";
+                }
             }
             catch(Exception ex)
             {
-                tratamentoErros.Mensagem = ex.Message;
-                tratamentoErros.Sucesso = false;
+                tratamento.Mensagem = "Erro ao cadastrar apontamento: " + ex;
+                tratamento.Sucesso = false;
             }
-
-            return tratamentoErros;    
+            return tratamento;    
         }
 
-        public TratamentoErros <List<ApontamentoDeHoras>> ListarApontamentoHoras()
+        public Tratamento <List<ApontamentoDeHoras>> ListarApontamentoHoras()
         {
-            TratamentoErros<List<ApontamentoDeHoras>> tratamentoErros = new TratamentoErros<List<ApontamentoDeHoras>>();
+            Tratamento<List<ApontamentoDeHoras>> tratamento = new Tratamento<List<ApontamentoDeHoras>>();
 
             try
             {
-                tratamentoErros.Dados = _dbApontamentoHoras.ApontamentoDeHoras.ToList();
+                tratamento.Dados = _dbApontamentoHoras.ApontamentoDeHoras.ToList();
 
-                if (tratamentoErros.Dados.Count() == 0)
+                if (tratamento.Dados.Count() == 0)
                 {
-                    tratamentoErros.Mensagem = "Nenhum dado encontrado";
+                    tratamento.Mensagem = "Nenhum dado encontrado";
                 }
 
-                tratamentoErros.Mensagem = "Apontamento listado com sucesso";
+                tratamento.Mensagem = "Apontamento listado com sucesso";
 
             }
             catch (Exception ex)
             {
-                tratamentoErros.Mensagem = ex.Message;
-                tratamentoErros.Sucesso = false;
+                tratamento.Mensagem = "Erro ao listar apontamentos" + ex;
+                tratamento.Sucesso = false;
             }
-
-             return tratamentoErros;
+             return tratamento;
         }
 
-        public TratamentoErros<List<ApontamentoDeHoras>>  UpdateApontamento(ApontamentoDeHoras editadoFuncionario)
+        public Tratamento<ApontamentoDeHoras>  UpdateApontamento(ApontamentoDeHoras editadoFuncionario)
         {
 
-            TratamentoErros<List<ApontamentoDeHoras>> tratamentoErros = new TratamentoErros<List<ApontamentoDeHoras>>();
+            Tratamento<ApontamentoDeHoras> tratamento = new Tratamento<ApontamentoDeHoras>();
 
             try
             {
+                tratamento.Dados = editadoFuncionario;
                 ApontamentoDeHoras apontamentoValue = _dbApontamentoHoras.ApontamentoDeHoras.AsNoTracking().FirstOrDefault(x => x == editadoFuncionario);
 
                 if (apontamentoValue == null)
                 {
-                    tratamentoErros.Dados = null;
-                    tratamentoErros.Mensagem = "Usuario não localizado";
-                    tratamentoErros.Sucesso = false;
+                    tratamento.Dados = null;
+                    tratamento.Mensagem = "Usuario não localizado";
+                    tratamento.Sucesso = false;
+                    return tratamento;
+
                 }
+                if (tratamento.Dados.TempoTotal == "00:00")
+                {
+                    tratamento.Dados = null;
+                    tratamento.Mensagem = "Formato de horário inválido. Não foi possível atualizar o apontamento.";
+                    tratamento.Sucesso = false;
 
-                _dbApontamentoHoras.ApontamentoDeHoras.Update(editadoFuncionario);
-                _dbApontamentoHoras.SaveChanges();
+                }
+                else
+                {
+                    _dbApontamentoHoras.ApontamentoDeHoras.Update(editadoFuncionario);
+                    _dbApontamentoHoras.SaveChanges();
 
-                tratamentoErros.Mensagem = "Apontamento atualizado com sucesso";
-                tratamentoErros.Dados = _dbApontamentoHoras.ApontamentoDeHoras.ToList();
+                    tratamento.Mensagem = "Apontamento atualizado com sucesso";
+                }
             }
-
+            
             catch (Exception ex)
             {
-                tratamentoErros.Mensagem = ex.Message;
-                tratamentoErros.Sucesso = false;
+                tratamento.Mensagem = "Erro ao atualizar apontamento" + ex;
+                tratamento.Sucesso = false;
             }
-
-            return tratamentoErros;
+            return tratamento;
         }
 
-        public TratamentoErros<ApontamentoDeHoras> RemoveApontamento(int id)
+        public Tratamento<ApontamentoDeHoras> RemoveApontamento(int id)
         {
 
-            TratamentoErros<ApontamentoDeHoras> tratamentoErros = new TratamentoErros<ApontamentoDeHoras>();
+            Tratamento<ApontamentoDeHoras> tratamento = new Tratamento<ApontamentoDeHoras>();
 
             try
             {
@@ -110,27 +125,24 @@ namespace DemoAPI.Models.Data
     
                 if (apontamentoValue == null)
                 {
-                    tratamentoErros.Dados = null;
-                    tratamentoErros.Mensagem = "Usuario não localizado";
-                    tratamentoErros.Sucesso = false;
+                    tratamento.Dados = null;
+                    tratamento .Mensagem = "Usuario não localizado";
+                    tratamento.Sucesso = false;
                 }
 
                 _dbApontamentoHoras.ApontamentoDeHoras.Remove(apontamentoValue);
                 _dbApontamentoHoras.SaveChanges();
 
-                tratamentoErros.Mensagem = "Apontamento deletado com sucesso";
-                tratamentoErros.Dados = apontamentoValue;
+                tratamento.Mensagem = "Apontamento deletado com sucesso";
+                tratamento.Dados = apontamentoValue;
             }
 
             catch (Exception ex)
             {
-                tratamentoErros.Mensagem = ex.Message;
-                tratamentoErros.Sucesso = false;
+                tratamento.Mensagem = "Erro ao deletar apontamento" + ex;
+                tratamento.Sucesso = false;
             }
-
-            return tratamentoErros;
-
-            
+            return tratamento;
         }
     }
 }

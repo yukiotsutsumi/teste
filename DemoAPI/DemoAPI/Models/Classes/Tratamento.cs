@@ -1,6 +1,6 @@
 ﻿namespace DemoAPI.Models.Classes
 {
-    public class TratamentoErros<T>
+    public class Tratamento<T>
     {
         public T? Dados { get; set; }
         public string Mensagem { get; set; } = string.Empty;

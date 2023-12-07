@@ -45,6 +45,7 @@ namespace DemoAPI.Models.Classes
         }
         static void CalcularHorasMinutos(string inicio, string fim, out int horas, out int minutos)
         {
+
             int inicioHoras = int.Parse(inicio.Substring(0, 2));
             int inicioMinutos = int.Parse(inicio.Substring(3, 2));
 

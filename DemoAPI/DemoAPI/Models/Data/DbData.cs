@@ -25,14 +25,14 @@ namespace DemoAPI.Models.Data
             return listaDeApontamentos;
         }
 
-        public ApontamentoDeHoras UpdateFuncionario(ApontamentoDeHoras editadoFuncionario)
+        public ApontamentoDeHoras UpdateApontamento(ApontamentoDeHoras editadoFuncionario)
         {
             _dbApontamentoHoras.ApontamentoDeHoras.Update(editadoFuncionario);
             _dbApontamentoHoras.SaveChanges();
             return editadoFuncionario;
         }
 
-        public List<ApontamentoDeHoras> DeleteFuncionario(int id)
+        public List<ApontamentoDeHoras> UpdateApontamento(int id)
         {
             var apontamentoParaExcluir = _dbApontamentoHoras.ApontamentoDeHoras.Find(id);
 

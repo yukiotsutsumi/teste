@@ -1730,11 +1730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Desenvolvimento\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\Repositorio_yukiotsutsumi_teste.git\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
       "projectName": "DemoAPI",
-      "projectPath": "C:\\Desenvolvimento\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
+      "projectPath": "C:\\Desenvolvimento\\Repositorio_yukiotsutsumi_teste.git\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
       "packagesPath": "C:\\Users\\Yukio Tsutsumi\\.nuget\\packages\\",
-      "outputPath": "C:\\Desenvolvimento\\DemoAPI\\DemoAPI\\obj\\",
+      "outputPath": "C:\\Desenvolvimento\\Repositorio_yukiotsutsumi_teste.git\\DemoAPI\\DemoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

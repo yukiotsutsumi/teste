@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HUfTLAKlS0+LYRIzrMpZd3AtLSCtNstPnfUbMrvuwAU88g8Qv+n2TYfpN+WP3NYUXMpH1Y5vykHCRu2D3LZFzQ==",
+  "dgSpecHash": "CeLnzX7ZDUW7yOKKILVaBAH5+n/7EqM0MOoOqqJiTNlpFs7EgIYFptlumIzT+/CHOMNAj6Xhe6/t5wRmq/TpBA==",
   "success": true,
-  "projectFilePath": "C:\\Desenvolvimento\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\Repositorio_yukiotsutsumi_teste.git\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yukio Tsutsumi\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Yukio Tsutsumi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",

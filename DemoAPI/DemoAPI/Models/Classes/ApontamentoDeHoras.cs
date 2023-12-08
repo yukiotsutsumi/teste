@@ -6,8 +6,10 @@ namespace DemoAPI.Models.Classes
     {
         [Key]
         public int Id { get; set; }
-        [Required]
-        public DateTime Data { get; } = DateTime.Now;
+
+        public DateTime Data { get; } = DateTime.Now.Date;
+        public string DataFormatada => Data.ToString("dd/MM/yyyy");
+
         [Required]
         public string Nome { get; set; } = "";
         [Required]

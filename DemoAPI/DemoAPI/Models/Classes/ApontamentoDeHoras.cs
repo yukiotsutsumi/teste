@@ -36,9 +36,9 @@ namespace DemoAPI.Models.Classes
                 int horasTarde, minutosTarde;
                 CalcularHorasMinutos(inicioTarde, fimTarde, out horasTarde, out minutosTarde);
                 
-                if(horasManha == 00 || horasTarde == 00)
+                if(horasManha == 100 || horasTarde == 100)
                 {
-                    return "00:00";
+                    return "Erro";
                 }
 
                 int horasTotal = horasManha + horasTarde;
@@ -71,8 +71,8 @@ namespace DemoAPI.Models.Classes
             }
             catch(Exception) 
             {
-                horas = 00;
-                minutos = 00;
+                horas = 100;
+                minutos = 100;
             }
         }
     }

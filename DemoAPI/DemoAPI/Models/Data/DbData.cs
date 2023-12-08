@@ -26,10 +26,10 @@ namespace DemoAPI.Models.Data
 
                     return tratamento;
                 }
-                if (tratamento.Dados.TempoTotal == "00:00")
+                if (tratamento.Dados.TempoTotal == "Erro")
                 {
                     tratamento.Dados = null;
-                    tratamento.Mensagem = "Formato de horário inválido";
+                    tratamento.Mensagem = "Horário inválido";
                     tratamento.Sucesso = false;
                 }
                 else
@@ -66,7 +66,7 @@ namespace DemoAPI.Models.Data
             }
             catch (Exception ex)
             {
-                tratamento.Mensagem = "Erro ao listar apontamentos" + ex;
+                tratamento.Mensagem = "Erro ao listar apontamentos: " + ex;
                 tratamento.Sucesso = false;
             }
              return tratamento;
@@ -90,12 +90,11 @@ namespace DemoAPI.Models.Data
                     return tratamento;
 
                 }
-                if (tratamento.Dados.TempoTotal == "00:00")
+                if (tratamento.Dados.TempoTotal == "Erro")
                 {
                     tratamento.Dados = null;
-                    tratamento.Mensagem = "Formato de horário inválido. Não foi possível atualizar o apontamento.";
+                    tratamento.Mensagem = "Horário inválido. Não foi possível atualizar o apontamento.";
                     tratamento.Sucesso = false;
-
                 }
                 else
                 {
@@ -108,7 +107,7 @@ namespace DemoAPI.Models.Data
             
             catch (Exception ex)
             {
-                tratamento.Mensagem = "Erro ao atualizar apontamento" + ex;
+                tratamento.Mensagem = "Erro ao atualizar apontamento: " + ex;
                 tratamento.Sucesso = false;
             }
             return tratamento;
@@ -139,7 +138,7 @@ namespace DemoAPI.Models.Data
 
             catch (Exception ex)
             {
-                tratamento.Mensagem = "Erro ao deletar apontamento" + ex;
+                tratamento.Mensagem = "Erro ao deletar apontamento: " + ex;
                 tratamento.Sucesso = false;
             }
             return tratamento;
